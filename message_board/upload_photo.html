@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+
+<body>
+
+<?php
+session_start();
+
+//检测是否登录，若没登录则转向登录界面
+if(!isset($_SESSION['id'])){
+    header("Location:user_login.html");
+    exit();
+}
+
+?>
+
+ <form action="upload_photo.php" method="post" enctype="multipart/form-data" name="upload_form">
+
+     <label>选择图片文件修改头像</label>
+      <input name="imgfile" type="file" accept="image/gif,image/jpeg,image/png"/>
+
+       <input name="upload" type="submit" value="上传" />
+     </form>
+</body>
+</html>
+

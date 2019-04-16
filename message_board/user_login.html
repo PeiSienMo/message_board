@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>留言板用户登录</title>
+    <style type="text/css">
+        body{
+
+            background-image:url(material/background.jpg)
+        }
+        .header{
+            padding: 30% 0 0%;
+
+        }
+        .center{
+            padding: 0 0 0;
+        }
+        .footer{
+            padding: 0% 0 30% 0;
+        }
+    </style>
+</head >
+
+<body>
+
+<div>
+    <div class="header"></div>
+    <div class="center">
+        <form action="user_login.php" method="post" enctype="multipart/form-data">
+            <table width="25%" border="0"  align="center">
+                <tr>
+                    <td colspan="2" align="center"><img src="material/logo.jpg" width="141" height="100" /></td>
+                </tr>
+                <tr>
+                    <td width="30%">用户名字：</td>
+                    <td><input name="name" type="text" ></td>
+                </tr>
+                <tr>
+                    <td width="30%">用户密码：</td>
+                    <td> <input name="password" type="password" ></td>
+                </tr>
+                <tr>
+                    <td width="30%"><input type="submit" value="登陆" name="submit"></td>
+                    <td><a href="user_register.html">
+                        注册
+                    </a></td>
+                </tr>
+            </table>
+
+
+        </form>
+    </div>
+    <div class="footer"> </div>
+</div>
+</body>
+
+</html>
